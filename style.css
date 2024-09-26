@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+.header1 {
+    color: tomato;
+    text-align: center;
+    border: 2px solid black;
+    padding: 14px 20px;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    
+}
+
+.header1:hover {
+    text-decoration: underline;
+    text-shadow: 2px 2px green;
+}
+
+.topnav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: rgb(50, 68, 68);
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    padding: 12px 24px;
+    color: white;
+    font-family: fantasy;
+    
+}
+
+#donate {
+    float: right;
+    background-color: #04aa6d;
+}
+
+li a:hover {
+    background-color: #04aa6d;
+}
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background: #f1f1f1;
+    padding-left: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.fakeimg {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid green;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.foot {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
